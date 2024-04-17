@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {ScrollView, Text, TextInput, StyleSheet, Pressable } from 'react-native';
 
-const Card = ({ navigation }) => {
+const Multiplication = ({ navigation }) => {
   const [firstNumber, setFirstNumber] = useState(0);
   const [secondNumber, setSecondNumber] = useState(0);
   const [correctAnswer, setCorrectAnswer] = useState(0);
@@ -39,7 +39,6 @@ const Card = ({ navigation }) => {
     getNumbers(arr);
     inputRef.current.focus();
   }, [score]);
-
 
   const changeInput = (val) => {
     setUserInput(val);
@@ -117,36 +116,39 @@ const styles = StyleSheet.create({
     backgroundColor: '#4285F4',
   },
   headerText: {
-    fontSize: 26,
-    marginTop: 60,
+    fontSize: 30,
+    marginTop: 100,
     color: '#EDEFEE',
     textAlign: 'center',
     fontWeight: 'bold',
   },
   regularText: {
-    fontSize: 26,
+    fontSize: 30,
     fontWeight: 'bold',
     color: '#EDEFEE',
     textAlign: 'center',
   },
   textInput: {
+    marginTop: 30,
     height: 40,
-    margin: 12,
+    margin: 20,
     borderWidth: 1,
-    fontSize: 24,
+    fontSize: 30,
     backgroundColor: '#fff',
     borderColor: '#EDEFEE',
     borderRadius: 10,
     textAlign: 'center',
   },
   emojiText: {
-    fontSize: 20,
+    marginTop: 30,
+    fontSize: 30,
     textAlign: 'center',
     color: "#fff"
   },
   button: {
-    fontSize: 20,
+    fontSize: 30,
     padding: 8,
+    marginTop: 30,
     marginVertical: 8,
     marginLeft: 120,
     marginRight: 120,
@@ -158,8 +160,8 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: 30,
   },
 });
 
-export default Card;
+export default Multiplication;

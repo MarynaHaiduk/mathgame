@@ -13,7 +13,7 @@ const Correct = ({ navigation }) => {
       <Text style={styles.emojiText}>{emoji[randomEmoji]}</Text>     
       <Text style={styles.regularText}>{answer[randomAnswer]}</Text>
       <Pressable
-        onPress={() => navigation.navigate('Card')}
+        onPress={() => navigation.navigate('Multiplication')}
         accessibilityLabel="button correct"
         style={styles.button}>
         <Text style={styles.buttonText}>Next</Text>
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     paddingTop: 80,
-    fontSize: 34,
+    fontSize: 38,
     padding: 20,
     color: 'yellow',
     fontWeight: 'bold',
@@ -40,17 +40,18 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   regularText: {
-    fontSize: 20,
+    fontSize: 30,
     padding: 20,
     color: '#fff',
     textAlign: 'center',
   },
   button: {
-    fontSize: 20,
+    fontSize: 30,
+    marginTop: 30,
     padding: 8,
     marginVertical: 8,
-    marginLeft: 120,
-    marginRight: 120,
+    marginLeft: 100,
+    marginRight: 100,
     backgroundColor: '#FE5000',
     borderColor: '#EDEFEE',
     borderWidth: 2,
@@ -59,7 +60,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: 30,
   },
 });
 

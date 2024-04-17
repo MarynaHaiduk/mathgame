@@ -3,7 +3,7 @@
     "name": "kidstorial",
     "slug": "kidstorial",
     "description": "Learning games and fun activities for kids with quizzes.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,7 +24,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.maryna321.kidstorial"
+      "package": "com.maryna321.kidstorial",
+      "versionCode": 5
     },
     "web": {
       "favicon": "./assets/favicon.png"

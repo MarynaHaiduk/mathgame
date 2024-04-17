@@ -1,7 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/Home";
-import Card from '../screens/Card';
+import Multiplication from '../screens/Multiplication';
 import Correct from '../screens/Answers/Correct';
 import Incorrect from '../screens/Answers/Incorrect';
 import Completed from '../screens/Answers/Completed';
@@ -13,16 +13,17 @@ const RootNavigator = () => {
     <Stack.Navigator 
       initialRouteName="Home"
       screenOptions={{
-        headerTintColor: 'blue',
+        headerStyle: { backgroundColor: '#4285F4' },
+        headerTintColor: '#EDEFEE',
         headerTitleAlign: 'center',
         headerTitleStyle: {
           fontWeight: 'bold',
-          fontSize: 26,
+          fontSize: 30,
         },
       }}
     >
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Card" component={Card} />
+      <Stack.Screen name="Multiplication" component={Multiplication} />
       <Stack.Screen name="Correct" component={Correct} />
       <Stack.Screen name="Incorrect" component={Incorrect} />
       <Stack.Screen name="Completed" component={Completed} />
