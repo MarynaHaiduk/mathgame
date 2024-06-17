@@ -5,6 +5,7 @@ import Multiplication from '../screens/Multiplication';
 import Correct from '../screens/Answers/Correct';
 import Incorrect from '../screens/Answers/Incorrect';
 import Completed from '../screens/Answers/Completed';
+import Policy from '../screens/Policy';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,7 +15,7 @@ const RootNavigator = () => {
       initialRouteName="Home"
       screenOptions={{
         headerStyle: { backgroundColor: '#4285F4' },
-        headerTintColor: '#EDEFEE',
+        headerTintColor: '#FFF',
         headerTitleAlign: 'center',
         headerTitleStyle: {
           fontWeight: 'bold',
@@ -27,6 +28,7 @@ const RootNavigator = () => {
       <Stack.Screen name="Correct" component={Correct} />
       <Stack.Screen name="Incorrect" component={Incorrect} />
       <Stack.Screen name="Completed" component={Completed} />
+      <Stack.Screen name="Policy" component={Policy} />
     </Stack.Navigator>
   );
 };           

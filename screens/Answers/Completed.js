@@ -13,7 +13,9 @@ const Completed = ({ navigation }) => {
       <Text style={styles.regularText}>Well Done! You are Professional!</Text>
       <Pressable
         onPress={() => navigation.navigate('Home')}
-        accessibilityLabel="button completed"
+        accessible={true}
+        accessibilityLabel="Tap me!"
+        accessibilityHint="Navigates to the Home screen"
         style={styles.button}>
         <Text style={styles.buttonText}>Start again</Text>
       </Pressable>
@@ -39,7 +41,7 @@ const styles = StyleSheet.create({
   },
   regularText: {
     fontSize: 20,
-    color: '#fff',
+    color: '#FFF',
     textAlign: 'center',
   },
   button: {
@@ -55,7 +57,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   buttonText: {
-    color: '#fff',
+    color: '#FFF',
     textAlign: 'center',
     fontSize: 20,
   },

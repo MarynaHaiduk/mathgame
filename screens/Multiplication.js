@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {ScrollView, Text, TextInput, StyleSheet, Pressable } from 'react-native';
 
+
 const Multiplication = ({ navigation }) => {
   const [firstNumber, setFirstNumber] = useState(0);
   const [secondNumber, setSecondNumber] = useState(0);
@@ -96,10 +97,12 @@ const Multiplication = ({ navigation }) => {
         <Pressable
           style={styles.button}
           onPress={correct}
+          accessible={true}
+          accessibilityLabel="Tap me!"
+          accessibilityHint="Click the submit button"
         >
           <Text 
             style={styles.buttonText}
-            aria-label="button submit"
           >Submit</Text>
         </Pressable>
         <Text 

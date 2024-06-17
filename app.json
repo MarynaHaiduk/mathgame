@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "kidstorial",
-    "slug": "kidstorial",
+    "name": "mathgame",
+    "slug": "mathgame",
     "description": "Learning games and fun activities for kids with quizzes.",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -17,14 +17,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.maryna321.kidstorial"
+      "bundleIdentifier": "com.fungame.mathgame"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.maryna321.kidstorial",
+      "package": "com.fungame.mathgame",
       "versionCode": 5
     },
     "web": {
@@ -32,7 +32,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "4f8d7209-ede4-463f-99dd-10d52b0c4858"
+        "projectId": "3f34f583-e741-4687-86d0-ce34320f8556"
       }
     }
   }

@@ -14,7 +14,9 @@ const Correct = ({ navigation }) => {
       <Text style={styles.regularText}>{answer[randomAnswer]}</Text>
       <Pressable
         onPress={() => navigation.navigate('Multiplication')}
-        accessibilityLabel="button correct"
+        accessible={true}
+        accessibilityLabel="Tap me!"
+        accessibilityHint="Navigates to the Multiplication screen"
         style={styles.button}>
         <Text style={styles.buttonText}>Next</Text>
       </Pressable>
@@ -42,7 +44,7 @@ const styles = StyleSheet.create({
   regularText: {
     fontSize: 30,
     padding: 20,
-    color: '#fff',
+    color: '#FFF',
     textAlign: 'center',
   },
   button: {
@@ -58,7 +60,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   buttonText: {
-    color: '#fff',
+    color: '#FFF',
     textAlign: 'center',
     fontSize: 30,
   },

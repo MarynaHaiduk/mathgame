@@ -1,16 +1,29 @@
 import React from 'react';
 import { View, Text, Pressable, StyleSheet } from 'react-native';
+import Policy from './Policy';
+
 
 const Home = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.regularText}></Text>
-      <Pressable
-        onPress={() => navigation.navigate('Multiplication')}
-        accessibilityLabel="button"
-        style={styles.button}>
-        <Text style={styles.buttonText}>Multiplication</Text>
-      </Pressable>
+      <View style={styles.content}>
+        <Text style={styles.regularText}></Text>
+        <Pressable
+          onPress={() => navigation.navigate('Multiplication')}
+          accessible={true}
+          accessibilityLabel="Tap me!"
+          accessibilityHint="Navigates to the Multiplication screen"
+          style={styles.button}>
+          <Text style={styles.buttonText}>Multiplication</Text>
+        </Pressable>
+      </View>
+      <View 
+        style={styles.footer}
+        accessibilityLabel="Tap me!"
+        accessibilityHint="Navigates to the Policy screen"
+      >
+        <Policy />
+      </View>
     </View>
   );
 }
@@ -20,11 +33,17 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#4285F4',
   },
+  content: {
+    flex: 0.8,
+  },
+  footer: {
+    flex: 0.2,
+  },
   regularText: {
     fontSize: 30,
     padding: 120,
     marginVertical: 8,
-    color: '#EDEFEE',
+    color: '#000',
     textAlign: 'center',
   },
   button: {
